@@ -4,3 +4,5 @@ function checkPalindrome (kata) {
   }
 
   console.log(checkPalindrome('hannah'))
+  console.log(checkPalindrome('Bayu'))
+  console.log(checkPalindrome('kayak'))
