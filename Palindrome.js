@@ -1,8 +1,13 @@
-function checkPalindrome (kata) {
-    console.log(kata)
-    return kata == kata.split('').reverse().join('');
-  }
 
-  console.log(checkPalindrome('hannah'))
-  console.log(checkPalindrome('Bayu'))
-  console.log(checkPalindrome('kayak'))
+
+const Palindrome = (kata) => {
+  const karakter = kata.toLowerCase().replace(/[^a-z]/g, '') .split('');
+  if (karakter.join('') === karakter.reverse().join('')) {
+    return true; 
+    } else { return false;
+      }
+    }
+  const hasil = Palindrome("Kodok"); 
+
+  console.log(hasil);
+  
